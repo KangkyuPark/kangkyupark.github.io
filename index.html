@@ -2,10 +2,57 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <meta name="color-scheme" content="light dark">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kangkyu Park</title>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --muted: #555555;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --fg: #e6edf3;
+        --muted: #9aa4af;
+      }
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    p {
+      color: var(--muted);
+      max-width: 600px;
+      line-height: 1.6;
+    }
+  </style>
 </head>
+
 <body>
   <h1>Kangkyu Park</h1>
-  <p>Interested in computer architecture and systems for AI and autonomous systems.</p>
+  <p>
+    Interested in computer architecture and systems for AI and autonomous systems.
+  </p>
 </body>
 </html>
