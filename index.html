@@ -23,17 +23,20 @@
 
     body {
       margin: 0;
-      padding: 0;
       background-color: var(--bg);
       color: var(--fg);
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                    Roboto, Helvetica, Arial, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      min-height: 100vh;            /* 중앙 느낌 유지 */
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      text-align: center;
+      padding: 40px 20px;           /* 내용 늘어나면 스크롤 */
     }
 
     h1 {
@@ -45,14 +48,31 @@
       color: var(--muted);
       max-width: 600px;
       line-height: 1.6;
+      margin: 0.5rem 0;
+    }
+
+    .section-title {
+      margin-top: 2.5rem;
+      font-weight: 600;
+      color: var(--fg);
+    }
+
+    .placeholder {
+      font-style: italic;
+      color: var(--muted);
     }
   </style>
 </head>
 
 <body>
-  <h1>Kangkyu Park</h1>
-  <p>
-    Interested in computer architecture and systems for AI and autonomous systems.
-  </p>
+  <div class="container">
+    <h1>Kangkyu Park</h1>
+    <p>
+      Interested in computer architecture and systems for AI and autonomous systems.
+    </p>
+
+    <div class="section-title">2026</div>
+    <p class="placeholder">—</p>
+  </div>
 </body>
 </html>
